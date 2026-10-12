@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Capt Pushpinder & Mehak | Wedding Invitation</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+    --wine:#4b101c;
+    --wine-dark:#24070d;
+    --gold:#d6ad62;
+    --gold-light:#f2d99a;
+    --cream:#fff8eb;
+    --black:#10070a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(circle at top,#641c2a 0%,#2a080f 45%,#100307 100%);
+    color:var(--cream);
+    font-family:'Montserrat',sans-serif;
+    overflow-x:hidden;
+}
+
+section{
+    position:relative;
+    overflow:hidden;
+}
+
+.gold{
+    color:var(--gold-light);
+}
+
+.eyebrow{
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+}
+
+.section-title{
+    font-family:'Great Vibes',cursive;
+    color:var(--gold-light);
+    font-size:clamp(50px,8vw,90px);
+    font-weight:400;
+}
+
+.gold-line{
+    width:80px;
+    height:1px;
+    background:var(--gold);
+    margin:20px auto;
+}
+
+
+/* =========================
+   OPENING
+========================= */
+
+.opening{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    background:
+        radial-gradient(circle at center,#651b29 0%,#27080f 55%,#090204 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    transition:opacity 1s ease,visibility 1s ease;
+}
+
+.opening.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.opening-inner{
+    padding:30px;
+}
+
+.om{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--gold-light);
+    font-size:18px;
+    letter-spacing:5px;
+    margin-bottom:30px;
+}
+
+.opening h1{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(60px,12vw,120px);
+    font-weight:400;
+    color:var(--gold-light);
+    line-height:.9;
+}
+
+.opening .weds{
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+    letter-spacing:7px;
+    margin:25px 0;
+    color:#fff;
+}
+
+.open-btn{
+    margin-top:40px;
+    padding:15px 38px;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    background:transparent;
+    cursor:pointer;
+    font-family:'Montserrat',sans-serif;
+    letter-spacing:3px;
+    transition:.3s;
+}
+
+.open-btn:hover{
+    background:var(--gold);
+    color:var(--wine-dark);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:
+        linear-gradient(rgba(20,3,8,.25),rgba(20,3,8,.8)),
+        radial-gradient(circle at center,rgba(155,66,75,.35),transparent 55%);
+}
+
+.hero-content{
+    max-width:1000px;
+    width:100%;
+}
+
+.hero-date{
+    font-size:12px;
+    letter-spacing:6px;
+    color:var(--gold-light);
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-weight:400;
+    font-size:clamp(75px,13vw,150px);
+    line-height:.85;
+    color:var(--gold-light);
+    text-shadow:0 8px 40px rgba(0,0,0,.5);
+}
+
+.hero-weds{
+    margin:28px 0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:26px;
+    letter-spacing:9px;
+    color:white;
+}
+
+.hero-sub{
+    font-family:'Cormorant Garamond',serif;
+    font-size:23px;
+    max-width:600px;
+    margin:auto;
+    line-height:1.5;
+    color:#f5e7d3;
+}
+
+.scroll-down{
+    margin-top:70px;
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:4px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(10px)}
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section{
+    padding:110px 20px;
+    text-align:center;
+    background:rgba(0,0,0,.18);
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:45px;
+}
+
+.time-box{
+    min-width:125px;
+    padding:25px 15px;
+    border:1px solid rgba(214,173,98,.5);
+    background:rgba(255,255,255,.035);
+    backdrop-filter:blur(8px);
+}
+
+.time-box span{
+    display:block;
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    color:var(--gold-light);
+}
+
+.time-box small{
+    font-size:10px;
+    letter-spacing:3px;
+    color:#e8d8c2;
+}
+
+
+/* =========================
+   ORIGINAL LEAF CARD
+========================= */
+
+.original-card-section{
+    padding:110px 20px 120px;
+    text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(214,173,98,.12),transparent 58%),
+        #120509;
+}
+
+.original-card-wrap{
+    width:min(100%,900px);
+    margin:auto;
+}
+
+.original-card-frame{
+    position:relative;
+    width:min(100%,690px);
+    margin:42px auto 0;
+    padding:14px;
+    background:
+        linear-gradient(145deg,#f8f0df,#fffaf0 50%,#eadcc1);
+    border:1px solid rgba(214,173,98,.8);
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.55),
+        0 0 0 8px rgba(214,173,98,.06),
+        inset 0 0 0 1px rgba(75,16,28,.18);
+    transform:rotate(-.25deg);
+}
+
+.original-card-frame::before{
+    content:"";
+    position:absolute;
+    pointer-events:none;
+    inset:25px;
+    border:1px solid rgba(75,16,28,.28);
+    z-index:2;
+}
+
+.original-card-frame::after{
+    content:"";
+    position:absolute;
+    pointer-events:none;
+    inset:31px;
+    border:1px solid rgba(214,173,98,.55);
+    z-index:2;
+}
+
+.original-card-image{
+    display:block;
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:auto;
+    border:1px solid rgba(75,16,28,.28);
+}
+
+.original-card-caption{
+    margin-top:22px;
+    color:rgba(242,217,154,.8);
+    font-family:'Cormorant Garamond',serif;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+
+/* =========================
+   FILM REEL
+========================= */
+
+.gallery-section{
+    padding:110px 0;
+    background:#090306;
+}
+
+.gallery-heading{
+    text-align:center;
+    padding:0 20px 60px;
+}
+
+.film-row{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin:22px 0;
+    padding:20px 0;
+    background:#080608;
+    border-top:5px solid #191419;
+    border-bottom:5px solid #191419;
+}
+
+.film-row::before,
+.film-row::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    height:7px;
+    z-index:5;
+    background:
+        radial-gradient(circle,#d0c5c0 3px,transparent 4px)
+        0 0/22px 7px repeat-x;
+    opacity:.45;
+}
+
+.film-row::before{top:2px}
+.film-row::after{bottom:2px}
+
+.film-track{
+    display:flex;
+    width:max-content;
+    gap:16px;
+    will-change:transform;
+}
+
+.film-track.left{
+    animation:filmLeft 38s linear infinite;
+}
+
+.film-track.right{
+    animation:filmRight 38s linear infinite;
+    transform:translateX(-50%);
+}
+
+.photo{
+    width:290px;
+    height:360px;
+    object-fit:cover;
+    flex-shrink:0;
+    border:7px solid #21181b;
+    box-shadow:
+        0 0 0 1px rgba(214,173,98,.4),
+        0 12px 30px rgba(0,0,0,.6);
+    filter:saturate(.95);
+    transition:.5s;
+}
+
+.photo:hover{
+    filter:saturate(1.15);
+    transform:scale(1.025);
+}
+
+@keyframes filmLeft{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+}
+
+@keyframes filmRight{
+    from{transform:translateX(-50%)}
+    to{transform:translateX(0)}
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+    padding:130px 20px;
+    text-align:center;
+    background:
+        radial-gradient(circle,rgba(113,37,50,.35),transparent 65%);
+}
+
+.message-text{
+    max-width:720px;
+    margin:30px auto 0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+    line-height:1.8;
+    color:#f6ead9;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.events-section{
+    padding:110px 20px;
+    background:#14070b;
+}
+
+.events-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.events{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.event-card{
+    padding:35px 25px;
+    text-align:center;
+    border:1px solid rgba(214,173,98,.35);
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.05),
+            rgba(255,255,255,.015)
+        );
+    transition:.4s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+}
+
+.event-date{
+    font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+.event-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    font-weight:500;
+    margin-bottom:20px;
+    color:var(--gold-light);
+}
+
+.event-card p{
+    font-size:13px;
+    line-height:1.9;
+    color:#eadccc;
+}
+
+
+/* =========================
+   BARAAT
+========================= */
+
+.baraat{
+    min-height:55vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+        linear-gradient(rgba(25,3,9,.7),rgba(25,3,9,.9)),
+        radial-gradient(circle at center,#6a1e2d,#170308);
+}
+
+.baraat h2{
+    font-family:'Great Vibes',cursive;
+    color:var(--gold-light);
+    font-size:clamp(65px,10vw,110px);
+    font-weight:400;
+}
+
+.baraat p{
+    margin-top:20px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:25px;
+}
+
+
+/* =========================
+   VENUE / MAP
+========================= */
+
+.venue-section{
+    padding:120px 20px;
+    background:#090306;
+}
+
+.venue-content{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.venue-name{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(40px,6vw,70px);
+    color:var(--gold-light);
+    margin:18px 0;
+}
+
+.venue-address{
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+    line-height:1.6;
+    color:#eadccc;
+}
+
+.map-container{
+    max-width:1100px;
+    height:450px;
+    margin:auto;
+    border:1px solid rgba(214,173,98,.5);
+    padding:7px;
+    background:#171014;
+}
+
+.map-container iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    filter:saturate(.75);
+}
+
+.directions{
+    display:inline-block;
+    margin-top:28px;
+    padding:14px 30px;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    text-decoration:none;
+    font-size:11px;
+    letter-spacing:3px;
+    transition:.3s;
+}
+
+.directions:hover{
+    background:var(--gold);
+    color:var(--wine-dark);
+}
+
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp{
+    padding:120px 20px;
+    text-align:center;
+    background:
+        radial-gradient(circle at center,rgba(104,32,47,.4),transparent 65%);
+}
+
+.rsvp h2{
+    font-family:'Great Vibes',cursive;
+    font-size:clamp(60px,9vw,100px);
+    color:var(--gold-light);
+    font-weight:400;
+}
+
+.rsvp p{
+    margin:25px auto;
+    max-width:600px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:23px;
+    line-height:1.6;
+}
+
+.rsvp-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:16px 35px;
+    background:var(--gold);
+    color:#25070d;
+    text-decoration:none;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    background:#070205;
+    color:#bda99d;
+    font-size:11px;
+    letter-spacing:2px;
+}
+
+footer strong{
+    color:var(--gold);
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:10000;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    background:rgba(20,4,9,.9);
+    color:var(--gold-light);
+    cursor:pointer;
+    font-size:18px;
+    backdrop-filter:blur(8px);
+    box-shadow:0 8px 25px rgba(0,0,0,.4);
+}
+
+.music-btn:hover{
+    background:var(--gold);
+    color:var(--wine-dark);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+    .events{
+        grid-template-columns:repeat(2,1fr);
+        max-width:760px;
+    }
+}
+
+@media(max-width:800px){
+    .events{
+        grid-template-columns:repeat(2,1fr);
+        max-width:650px;
+    }
+
+    .photo{
+        width:210px;
+        height:280px;
+    }
+
+    .time-box{
+        min-width:90px;
+    }
+
+    .time-box span{
+        font-size:40px;
+    }
+
+    .map-container{
+        height:360px;
+    }
+}
+
+@media(max-width:600px){
+    .events{
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+    .original-card-section{
+        padding:80px 12px 90px;
+    }
+
+    .original-card-frame{
+        padding:8px;
+        margin-top:30px;
+    }
+
+    .original-card-frame::before{
+        inset:17px;
+    }
+
+    .original-card-frame::after{
+        inset:21px;
+    }
+
+    .original-card-caption{
+        font-size:16px;
+    }
+}
+
+@media(max-width:500px){
+    .hero{
+        min-height:90vh;
+    }
+
+    .hero h1{
+        font-size:70px;
+    }
+
+    .hero-weds{
+        font-size:20px;
+        letter-spacing:6px;
+    }
+
+    .countdown{
+        gap:8px;
+    }
+
+    .time-box{
+        min-width:75px;
+        padding:18px 8px;
+    }
+
+    .time-box span{
+        font-size:34px;
+    }
+
+    .time-box small{
+        font-size:8px;
+        letter-spacing:2px;
+    }
+
+    .photo{
+        width:175px;
+        height:240px;
+    }
+
+    .message-text{
+        font-size:21px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     OPENING
+========================= -->
+
+<div class="opening" id="opening">
+
+    <div class="opening-inner">
+
+        <div class="om">
+            ॥ श्री गणेशाय नमः ॥
+        </div>
+
+        <h1>Capt Pushpinder</h1>
+
+        <div class="weds">WEDS</div>
+
+        <h1>Mehak</h1>
+
+        <button class="open-btn" onclick="openInvitation()">
+            OPEN INVITATION
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<!--
+    IMPORTANT:
+    Put wedding.mp3 in the SAME folder as this HTML file.
+-->
+
+<audio id="weddingMusic" loop preload="auto">
+    <source src="wedding.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()" id="musicBtn">
+    ♪
+</button>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-date">
+            THURSDAY · 12 NOVEMBER · 2026
+        </div>
+
+        <h1>Capt Pushpinder</h1>
+
+        <div class="hero-weds">
+            WEDS
+        </div>
+
+        <h1>Mehak</h1>
+
+        <div class="gold-line"></div>
+
+        <p class="hero-sub">
+            Together with their families,
+            they invite you to celebrate
+            the beginning of their forever.
+        </p>
+
+        <div class="scroll-down">
+            SCROLL TO DISCOVER
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     COUNTDOWN
+========================= -->
+
+<section class="countdown-section">
+
+    <div class="eyebrow">
+        THE COUNTDOWN
+    </div>
+
+    <h2 class="section-title">
+        Baraat Begins In
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p style="font-family:'Cormorant Garamond';font-size:21px;">
+        Thursday · 12 November 2026 · 6:00 PM
+    </p>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <span id="days">00</span>
+            <small>DAYS</small>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">00</span>
+            <small>HOURS</small>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">00</span>
+            <small>MINUTES</small>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">00</span>
+            <small>SECONDS</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ORIGINAL LEAF INVITATION CARD
+========================= -->
+
+<section class="original-card-section">
+
+    <div class="original-card-wrap">
+
+        <div class="eyebrow">
+            THE ORIGINAL INVITATION
+        </div>
+
+        <h2 class="section-title">
+            Wedding Card
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <div class="original-card-frame">
+
+            <img
+                src="card-leaf.jpg"
+                class="original-card-image"
+                alt="Original Capt Pushpinder and Mehak wedding invitation card"
+            >
+
+        </div>
+
+        <p class="original-card-caption">
+            Capt Pushpinder Weds Mehak · 2026
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTO FILM REEL
+========================= -->
+
+<section class="gallery-section">
+
+    <div class="gallery-heading">
+
+        <div class="eyebrow">
+            OUR STORY
+        </div>
+
+        <h2 class="section-title">
+            Moments Together
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p style="
+            font-family:'Cormorant Garamond';
+            font-size:21px;
+            color:#dfd0c1;
+        ">
+            A few memories before the beginning of forever.
+        </p>
+
+    </div>
+
+
+    <!-- ROW 1 : LEFT -->
+
+    <div class="film-row">
+
+        <div class="film-track left">
+
+            <img src="photo1.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo3.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+            <img src="photo5.jpg" class="photo">
+
+            <img src="photo1.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo3.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+            <img src="photo5.jpg" class="photo">
+
+        </div>
+
+    </div>
+
+
+    <!-- ROW 2 : RIGHT -->
+
+    <div class="film-row">
+
+        <div class="film-track right">
+
+            <img src="photo5.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+            <img src="photo3.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo1.jpg" class="photo">
+
+            <img src="photo5.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+            <img src="photo3.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo1.jpg" class="photo">
+
+        </div>
+
+    </div>
+
+
+    <!-- ROW 3 : LEFT -->
+
+    <div class="film-row">
+
+        <div class="film-track left">
+
+            <img src="photo3.jpg" class="photo">
+            <img src="photo1.jpg" class="photo">
+            <img src="photo5.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+
+            <img src="photo3.jpg" class="photo">
+            <img src="photo1.jpg" class="photo">
+            <img src="photo5.jpg" class="photo">
+            <img src="photo2.jpg" class="photo">
+            <img src="photo4.jpg" class="photo">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE MESSAGE
+========================= -->
+
+<section class="message">
+
+    <div class="eyebrow">
+        TWO HEARTS · ONE JOURNEY
+    </div>
+
+    <h2 class="section-title">
+        And So The Adventure Begins
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p class="message-text">
+
+        From countless little moments to one beautiful promise,
+        Capt Pushpinder and Mehak are beginning a new chapter
+        surrounded by the people who mean the most to them.
+
+        <br><br>
+
+        Your presence will make their celebration even more special.
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     WEDDING EVENTS
+========================= -->
+
+<section class="events-section">
+
+    <div class="events-heading">
+
+        <div class="eyebrow">
+            THE CELEBRATIONS
+        </div>
+
+        <h2 class="section-title">
+            Wedding Programme
+        </h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="events">
+
+
+        <!-- 04 NOV -->
+
+        <div class="event-card">
+
+            <div class="event-date">
+                04 NOVEMBER 2026
+            </div>
+
+            <h3>Satsang</h3>
+
+            <p>
+                Wednesday<br><br>
+
+                12:00 PM onwards
+
+                <br><br>
+
+                At their residence<br>
+                Krakah / Krakhar<br>
+                Palli Morh, J&K
+            </p>
+
+        </div>
+
+
+        <!-- 11 NOV -->
+
+        <div class="event-card">
+
+            <div class="event-date">
+                11 NOVEMBER 2026
+            </div>
+
+            <h3>Shagun</h3>
+
+            <p>
+                Wednesday<br><br>
+
+                Shagun — 11:00 AM
+                <br>
+
+                Lunch — 1:00 PM to 4:00 PM
+
+                <br><br>
+
+                At their residence
+            </p>
+
+        </div>
+
+
+        <!-- 12 NOV -->
+
+        <div class="event-card">
+
+            <div class="event-date">
+                12 NOVEMBER 2026
+            </div>
+
+            <h3>Baraat</h3>
+
+            <p>
+                Thursday<br><br>
+
+                Saant — 11:00 AM
+                <br>
+
+                Sehra Bandi — 4:00 PM
+                <br>
+
+                Baraat Departure — 6:00 PM
+
+                <br><br>
+
+                <strong>Shivam R.K. Resort</strong>
+                <br>
+
+                Ghagwal, J&K
+            </p>
+
+        </div>
+
+
+        <!-- 13 NOV -->
+
+        <div class="event-card">
+
+            <div class="event-date">
+                13 NOVEMBER 2026
+            </div>
+
+            <h3>Reception</h3>
+
+            <p>
+                Friday<br><br>
+
+                8:00 PM onwards
+
+                <br><br>
+
+                <strong>Sodhi Resorts</strong>
+                <br>
+
+                Barnoti, Kathua
+                <br>
+
+                Jammu & Kashmir
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BARAAT FEATURE
+========================= -->
+
+<section class="baraat">
+
+    <div>
+
+        <div class="eyebrow">
+            THE BIG DAY
+        </div>
+
+        <h2>
+            Capt Pushpinder Weds Mehak
+        </h2>
+
+        <p>
+            Thursday · 12 November 2026
+        </p>
+
+        <div class="gold-line"></div>
+
+        <p>
+            Baraat Departure · 6:00 PM
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BARAAT VENUE
+========================= -->
+
+<section class="venue-section">
+
+    <div class="venue-content">
+
+        <div class="eyebrow">
+            BARAAT VENUE
+        </div>
+
+        <div class="venue-name">
+            Shivam R.K. Resort
+        </div>
+
+        <div class="gold-line"></div>
+
+        <p class="venue-address">
+            Ghagwal, Jammu & Kashmir, India
+        </p>
+
+        <p style="
+            margin-top:15px;
+            color:#cbb8a7;
+            font-size:13px;
+        ">
+            Thursday · 12 November 2026
+            <br>
+            Baraat Departure · 6:00 PM
+        </p>
+
+        <a
+            class="directions"
+            href="https://www.google.com/maps/search/?api=1&query=Shivam+R.K.+Resort+Ghagwal+Jammu+Kashmir"
+            target="_blank"
+        >
+            📍 GET DIRECTIONS
+        </a>
+
+    </div>
+
+
+    <div class="map-container">
+
+        <iframe
+            src="https://www.google.com/maps?q=Shivam+R.K.+Resort+Ghagwal+Jammu+Kashmir&output=embed"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECEPTION VENUE
+========================= -->
+
+<section class="venue-section">
+
+    <div class="venue-content">
+
+        <div class="eyebrow">
+            RECEPTION VENUE
+        </div>
+
+        <div class="venue-name">
+            Sodhi Resorts
+        </div>
+
+        <div class="gold-line"></div>
+
+        <p class="venue-address">
+            Barnoti, Kathua<br>
+            Jammu & Kashmir, India
+        </p>
+
+        <p style="
+            margin-top:15px;
+            color:#cbb8a7;
+            font-size:13px;
+        ">
+            Friday · 13 November 2026
+            <br>
+            Reception · 8:00 PM onwards
+        </p>
+
+        <a
+            class="directions"
+            href="https://www.google.com/maps/search/?api=1&query=Sodhi+Resorts+Barnoti+Kathua+Jammu+and+Kashmir"
+            target="_blank"
+        >
+            📍 GET DIRECTIONS
+        </a>
+
+    </div>
+
+
+    <div class="map-container">
+
+        <iframe
+            src="https://www.google.com/maps?q=Sodhi+Resorts+Barnoti+Kathua+Jammu+and+Kashmir&output=embed"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RSVP
+========================= -->
+
+<section class="rsvp">
+
+    <div class="eyebrow">
+        YOUR PRESENCE IS OUR GIFT
+    </div>
+
+    <h2>
+        Join Us
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+        Come celebrate love, laughter and the beginning
+        of a beautiful new journey.
+    </p>
+
+    <a
+        class="rsvp-btn"
+        href="https://wa.me/917889861213?text=Congratulations%20Capt%20Pushpinder%20%26%20Mehak!%20We%20will%20be%20joining%20you%20for%20the%20wedding."
+        target="_blank"
+    >
+        RSVP ON WHATSAPP
+    </a>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    With love & blessings ❤️
+
+    <br><br>
+
+    <strong>Capt Pushpinder & Mehak</strong>
+
+    <br><br>
+
+    2026
+
+</footer>
+
+
+<script>
+
+/* =========================
+   MUSIC
+========================= */
+
+let musicPlaying = false;
+
+function openInvitation(){
+
+    const opening = document.getElementById("opening");
+    const music = document.getElementById("weddingMusic");
+    const button = document.getElementById("musicBtn");
+
+    opening.classList.add("hide");
+
+    /*
+       Because the visitor has clicked OPEN INVITATION,
+       the browser normally allows music playback.
+    */
+
+    music.load();
+
+    music.play()
+        .then(function(){
+            musicPlaying = true;
+            button.textContent = "❚❚";
+        })
+        .catch(function(){
+            /*
+               If the browser still blocks it,
+               the floating music button can start it.
+            */
+        });
+}
+
+
+function toggleMusic(){
+
+    const music = document.getElementById("weddingMusic");
+    const button = document.getElementById("musicBtn");
+
+    if(musicPlaying){
+
+        music.pause();
+
+        button.textContent = "♪";
+
+        musicPlaying = false;
+
+    }else{
+
+        music.play()
+            .then(function(){
+
+                button.textContent = "❚❚";
+
+                musicPlaying = true;
+
+            })
+            .catch(function(){
+
+                alert(
+                    "Make sure wedding.mp3 is in the same folder as index.html."
+                );
+
+            });
+    }
+}
+
+
+/* =========================
+   COUNTDOWN
+   12 NOVEMBER 2026
+   6:00 PM IST
+========================= */
+
+const weddingDate =
+    new Date("2026-11-12T18:00:00+05:30").getTime();
+
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const difference = weddingDate - now;
+
+
+    if(difference <= 0){
+
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            difference / (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (difference / (1000 * 60 * 60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (difference / (1000 * 60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (difference / 1000) % 60
+        );
+
+
+    document.getElementById("days").textContent =
+        String(days).padStart(2,"0");
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2,"0");
+}
+
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+</script>
+
+</body>
+</html>
